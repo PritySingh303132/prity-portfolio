@@ -11,16 +11,16 @@ export const about = [
 export const skills = [
   { group: 'Languages', items: ['Java', 'Python', 'JavaScript', 'SQL'] },
   { group: 'Core CS', items: ['Data Structures and Algorithms', 'OOP', 'DBMS', 'Operating Systems'] },
-  { group: 'AI / ML', items: ['NumPy', 'Pandas', 'Scikit-learn', 'TensorFlow/Keras', 'NLP', 'LSTM', 'Sentiment analysis', 'Groq API (Llama 3.3)', 'Vision AI', 'Computer vision'] },
+  { group: 'AI / ML', items: ['NumPy', 'Pandas', 'Scikit-learn', 'TensorFlow/Keras', 'NLP', 'LSTM', 'Sentiment analysis', 'Groq API (Llama 3.3)', 'Vision AI', 'Computer vision', 'Generative AI', 'Prompt Engineering'] },
   { group: 'Web and backend', items: ['HTML', 'CSS', 'React.js', 'Vite', 'Node.js', 'Express.js', 'FastAPI', 'Flask', 'REST APIs', 'JWT authentication'] },
   { group: 'Databases', items: ['MongoDB Atlas', 'Supabase', 'SQL'] },
-  { group: 'Data analytics', items: ['EDA', 'Data cleaning', 'Matplotlib'] },
-  { group: 'Tools', items: ['Git', 'GitHub', 'Linux', 'Vercel', 'Pytest'] },
+  { group: 'Data analytics', items: ['EDA', 'Data cleaning', 'Matplotlib', 'Seaborn', 'Excel', 'Power BI', 'Business analysis'] },
+  { group: 'Tools', items: ['Git', 'GitHub', 'Linux', 'Vercel', 'Pytest', 'Google Colab', 'Jupyter Notebook', 'PyCharm', 'XAMPP', 'VS Code'] },
   { group: 'Soft skills', items: ['Leadership', 'Public speaking', 'Communication', 'Community engagement', 'Event management', 'Content creation'] }]
 export const education = {
   college: 'Smt. Kashibai Navale College of Engineering (Sinhgad Institutes), Pune', university: 'Savitribai Phule Pune University (SPPU)',
   degree: 'Computer Engineering', status: 'Graduating 2027', graduation: 'B.E. 2023-2027',
-  cgpa: '9.20', cgpaNote: 'B.E. Computer Engineering, SPPU',
+  cgpa: '9.11', cgpaNote: 'B.E. Computer Engineering, SPPU',
   earlier: [
     { level: 'Class XII (PCM, CBSE)', school: 'Scottish Central School, Lalganj Tetari, Sasaram, Bihar', years: '2020-2022', result: '78.8%' },
     { level: 'Class X (CBSE)', school: 'BL Indo Anglian Public School, Aurangabad, Bihar', years: '2018-2020', result: '88.2%' }] }
@@ -41,10 +41,10 @@ export const projects = [
   { id: 'civic-samadhan', title: 'Civic Samadhan', category: 'AI/ML service for a civic-problem platform', featured: true,
     summary: 'A platform connecting Citizens (report problems), Universities (build solutions), Industry partners (fund and mentor) and Government (verify results).',
     problem: 'Most complaint portals only log the complaint and nothing happens after. People report the same issue repeatedly and nobody can tell what is urgent.',
-    contribution: 'I built the AI/ML service: a separate Python FastAPI service that any backend can call, with 33 automated tests.',
+    contribution: 'I built the ML pipeline and service: text preprocessing, semantic embeddings, duplicate detection, clustering, classification and priority prediction. It is integrated through FastAPI, developed on a dedicated Git feature branch, and has 33 automated tests.',
     tech: ['Python', 'FastAPI', 'Sentence Transformers', 'MiniLM', 'BLIP', 'OCR', 'HDBSCAN', 'XGBoost', 'scikit-learn', 'React', 'Node.js', 'Supabase'],
     pipeline: ['Report', 'AI triage', 'University solution', 'Industry support', 'Government verification'],
-    implemented: ['Pipeline 1 (understand the problem): reads a text or photo report, finds the category, gives a priority score from 0 to 10, finds duplicates and groups similar problems',
+    implemented: ['Embeddings: Sentence Transformer all-MiniLM-L6-v2, 384 dimensions', 'Pipeline 1 (understand the problem): reads a text or photo report, finds the category, gives a priority score from 0 to 10, finds duplicates and groups similar problems',
       'Pipeline 2 (rank the solutions): scores each solution on fit, cost, time, past experience and profit, and shows the best first with reasons'],
     planned: [], challenges: 'TODO', github: '', demo: '', shots: ['civic-1.webp', 'civic-2.webp'] },
   { id: 'predictx', title: 'PredictX', category: 'AI-powered stock trading platform (solo project)', featured: true,
@@ -61,14 +61,15 @@ export const projects = [
   { id: 'pokedex', title: 'Pokedex', category: 'Small project', summary: 'TODO', tech: [], github: '', demo: '' },
   { id: 'smart-text-editor', title: 'Smart Text Editor', category: 'Small project', summary: 'TODO', tech: [], github: '', demo: '' }]
 export const experience = [
-  { title: 'Google Gemini Student Ambassador', period: 'Jun 2026 - Sep 2026',
-    body: 'Selected for 2026 to represent Google AI and Gemini in the campus community. Progressed from Bronze to Silver to Gold.',
+  { title: 'Google Gemini Student Ambassador', period: 'Jul 2026 - Sep 2026',
+    body: 'One of 2,100 students selected nationwide for 2026 to represent Google AI and Gemini in the campus community. Progressed from Bronze to Silver to Gold.',
     points: ['Hosted and conducted student community meetings', 'Took part in Gemini product trials and Build Night with Nano Banana', 'Created and shared content to promote Gemini and AI tools', 'Encouraged hands-on AI exploration among students'] },
+  { title: 'Technical events attended', period: 'Community', body: 'AWS Future Builders Connect, Pune Global Azure, ET AI Hackathon 2.0 and AI Builders Mixer (Pune Edition).' },
   { title: 'Flipkart GRiD 8.0: National Semi-Finalist', period: '25 Sep 2026', body: 'Certificate of Achievement from Flipkart Early Careers, listed under SKNCOE Pune.' }]
 export const achievements = [
-  { name: 'Google Gemini Student Ambassador (Gold tier)', meta: 'Google, Jun-Sep 2026', link: '', img: '' },
-  { name: 'Flipkart GRiD 8.0 National Semi-Finalist', meta: 'Flipkart Early Careers, 25 Sep 2026', link: '/assets/Prity_SinghFlipkartGrid.pdf', img: 'flipkart-grid.webp' },
-  { name: 'Advanced Course on Green Skills and Artificial Intelligence', meta: 'Skills4Future Program, Edunet Foundation (AICTE + Shell India), Jan-Feb 2026', link: 'https://drive.google.com/file/d/1edcGESsbyuLOh2mhRXKUuA4YXk9Wt-U8/view', img: 'edunet-green-skills.webp' },
-  { name: 'Mastercard Advisors & Consulting Services Virtual Experience', meta: 'Mastercard (Forage), dates not confirmed', link: '', img: '' },
-  { name: 'Apna College: Alpha (DSA with Java)', meta: 'Certificate of completion', link: '/assets/apna-dsa-java.pdf', img: 'apna-dsa-java.webp' },
+  { name: 'Google Gemini Student Ambassador (Gold tier)', meta: 'Google, Jul-Sep 2026', link: '', img: '' },
+  { name: 'Flipkart GRiD 8.0 National Semi-Finalist', meta: 'Flipkart Early Careers, 25 Sep 2026', link: 'https://drive.google.com/file/d/1FaHJ_qOsgrEHRUnLV9Yymh1_0VD2SAV2/view?usp=sharing', img: 'flipkart-grid.webp' },
+  { name: 'Advanced Course on Green Skills and Artificial Intelligence', meta: 'Skills4Future Program, Edunet Foundation (AICTE + Shell India), Jan-Feb 2026', link: 'https://drive.google.com/file/d/1edcGESsbyuLOh2mhRXKUuA4YXk9Wt-U8/view?usp=sharing', img: 'edunet-green-skills.webp' },
+  { name: 'Mastercard Advisors & Consulting Services Job Simulation', meta: 'Forage, Mar-Apr 2026 (completed 2 Apr 2026): promotion optimization and data-driven storytelling', link: 'https://drive.google.com/file/d/1zc5pdamDtJRuJur4KDWsQ3PX5jt0FR5R/view?usp=drivesdk', img: 'mastercard-forage.webp' },
+  { name: 'Apna College: Alpha (DSA with Java)', meta: 'Certificate of completion', link: 'https://drive.google.com/file/d/1LbZSAD6Mbp4lS2tJiNXOEKUSolxVqT4j/view?usp=drivesdk', img: 'apna-dsa-java.webp' },
   { name: 'CodeChef: two bronze medals for a five-day streak', meta: '', link: '', img: '' }]
